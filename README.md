@@ -5,8 +5,8 @@
 npm install -g @nestjs/cli
 
 # create a new NestJS project:
-  nest new nestjs
-  cd nestjs 
+   nest new nestjs
+   cd nestjs 
 
 # Step 2: Generate a Module and a Controller 
 
