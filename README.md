@@ -16,17 +16,18 @@ npm install -g @nestjs/cli
    
 
 # Step 3: Start the Application
-  npm run start
+
+     import { Module } from '@nestjs/common';
+     import { SampleModule } from './sample/sample.module';
+  
+     @Module({
+       imports: [SampleModule],
+     })
+     export class AppModule {}
 
 # Step 4 :  Update the App Module  
 
-   import { Module } from '@nestjs/common';
-   import { SampleModule } from './sample/sample.module';
- 
-    @Module({
-      imports: [SampleModule],
-    })
-    export class AppModule {}
+     npm run start 
 
 # Run http://localhost:3000/sample in browser 
 
