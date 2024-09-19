@@ -4,7 +4,7 @@
 # Install Nest CLI globally
 npm install -g @nestjs/cli
 
-# create a new NestJS project:
+# Step 1 create a new NestJS project:
    nest new nestjs
    cd nestjs 
 
@@ -13,9 +13,20 @@ npm install -g @nestjs/cli
    nest generate module sample
    nest generate controller sample
    nest generate service sample 
+   
 
-# Step 8: Start the Application
+# Step 3: Start the Application
   npm run start
+
+# Step 4 :  Update the App Module  
+
+   import { Module } from '@nestjs/common';
+   import { SampleModule } from './sample/sample.module';
+ 
+    @Module({
+      imports: [SampleModule],
+    })
+    export class AppModule {}
 
 # Run http://localhost:3000/sample in browser 
 
